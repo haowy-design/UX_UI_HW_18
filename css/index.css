@@ -10,7 +10,7 @@ html{
 
 body{
     font-family: pretendard, sans-serif;
-    background-image:url(/images/Background.jpg);
+    background-image:url(images/Background.jpg);
     background-position:center;
     background-repeat:no-repeat;
     position: relative;
@@ -87,6 +87,8 @@ body{
     font-size: 1.75rem;
     font-weight:600;
     letter-spacing: 0.8rem;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .hpbutton {
@@ -206,7 +208,23 @@ footer{
   and (orientation: portrait){
 
 /* Tablet Main */
+.grid-container{
+  grid-template:
+  'nameA'
+  'contentA'
+  'descriptionA'
+  'buttonA';
+  grid-template-columns: 1fr;
+}
 
+.nameArea {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding:0;
+}
 
 /* Tablet Header */
 header{
@@ -248,23 +266,28 @@ header{
 }
 
 /* Mobile */
-@media only screen 
+@media only screen
+  and (min-device-width: 360px)
   and (max-device-width: 479px)
   and (orientation: portrait){
 
 /* Mobile Main */
 .grid-container{
-  grid-template-columns: repeat(3, 1fr);
+  grid-template:
+  'nameA'
+  'contentA'
+  'descriptionA'
+  'buttonA';
+  grid-template-columns: 1fr;
 }
 
-.projectSelection{
-    display:flex;
-    flex-direction: column;
-}
-
-.projectCategory{
-    height:12em;
-    font-size: 1.25em;
+.nameArea {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding:0;
 }
 
 /* Mobile Header */
