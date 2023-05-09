@@ -34,7 +34,8 @@ main{
 .projectSelection{
     display:flex;
     flex-direction: row;
-    padding: 2rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
 }
 
 .projectCategory{
