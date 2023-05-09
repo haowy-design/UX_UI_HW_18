@@ -22,7 +22,6 @@ main{
     display:flex;
     flex-direction: row;
     margin-top:2rem;
-    margin-bottom:2rem;
     margin-left: 10%;
     margin-right:10%;
     align-items: end;
@@ -95,6 +94,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin:0 10%;
     height:80%;
+    padding: 2rem;
 }
 
 .projectItem{
