@@ -56,11 +56,9 @@ body{
   height: 10px;
   width: 60px;
   background-color: #809EAD;
-  margin-bottom: 32px;
 }
 
 .verticleName{
-  text-align:center;
   font-family:Inter,sans-serif;
   font-weight:500;
   font-size:42px;
@@ -68,6 +66,7 @@ body{
   writing-mode: vertical-rl;
   text-orientation: upright;
   text-align:center;
+  margin-top: 30px;
 }
 
 .description{
@@ -208,6 +207,97 @@ footer{
   and (max-device-width: 768px)
   and (orientation: portrait){
 
+/* Tablet Main */
+body{
+  display:flex;
+  justify-content: center;
+}
+
+.grid-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template:
+    'image'
+    'infoMe'
+    'socials';
+  grid-template-columns: 1fr;
+}
+
+.aboutMe{
+  margin-top: 20px;
+  margin-left: 6%;
+}
+
+.nameContainer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width:auto;
+  margin-bottom: 0px;
+  left:50%;
+}
+
+.rectangle{
+  height: 30px;
+  width: 6px;
+  background-color: #809EAD;
+}
+
+.verticleName{
+  display:flex;
+  align-items: center;
+  font-size:20px;
+  letter-spacing: 16px;
+  writing-mode: horizontal-tb;
+  text-align:center;
+  white-space:nowrap;
+  margin-left:30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.description{
+  margin-top: 30px;
+  margin-left: 0px;
+  font-size: 16px;
+  max-width: 80%;
+}
+
+.socialMedia{
+  justify-content: start;
+  margin-left: 4%;
+}
+
+
+.socialMediaIcon{
+  width:40px;
+  height:40px;
+  margin: 4px;
+}
+
+.hpbutton {
+  background-color: none;
+  border: 3px solid black;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: Inter,sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 0.7rem;
+  padding: .75rem 0.75rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right:4px;
+}
+
 /* Tablet Header */
 header{
     display:grid;
@@ -253,14 +343,94 @@ header{
   and (orientation: portrait){
 
 /* Mobile Main */
-.projectSelection{
-    display:flex;
-    flex-direction: column;
+body{
+  display:flex;
+  justify-content: center;
 }
 
-.projectCategory{
-    height:12em;
-    font-size: 1.25em;
+.grid-container {
+  margin-top: 6vh;
+  margin-bottom: 20vh;
+  display: grid;
+  grid-template:
+    'image'
+    'infoMe'
+    'socials';
+  grid-template-columns: 1fr;
+}
+
+.aboutMe{
+  margin-top: 20px;
+  margin-left: 6%;
+}
+
+.nameContainer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width:auto;
+  margin-bottom: 0px;
+  left:50%;
+}
+
+.rectangle{
+  height: 30px;
+  width: 6px;
+  background-color: #809EAD;
+}
+
+.verticleName{
+  display:flex;
+  align-items: center;
+  font-size:20px;
+  letter-spacing: 16px;
+  writing-mode: horizontal-tb;
+  text-align:center;
+  white-space:nowrap;
+  margin-left:30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.description{
+  margin-top: 30px;
+  margin-left: 0px;
+  font-size: 16px;
+  max-width: 80%;
+}
+
+.socialMedia{
+  justify-content: start;
+  margin-left: 4%;
+}
+
+
+.socialMediaIcon{
+  width:40px;
+  height:40px;
+  margin: 4px;
+}
+
+.hpbutton {
+  background-color: none;
+  border: 3px solid black;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: Inter,sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 0.7rem;
+  padding: .75rem 0.75rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right:4px;
 }
 
 /* Mobile Header */

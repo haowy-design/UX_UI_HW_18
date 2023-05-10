@@ -209,6 +209,8 @@ footer{
 
 /* Tablet Main */
 .grid-container{
+  margin-top: 2vh;
+  margin-bottom: 20vh;
   grid-template:
   'nameA'
   'contentA'
@@ -273,6 +275,8 @@ header{
 
 /* Mobile Main */
 .grid-container{
+  margin-top: 2vh;
+  margin-bottom: 30vh;
   grid-template:
   'nameA'
   'contentA'

@@ -1,21 +1,26 @@
 html{
-    height:100%;
-    box-sizing: border-box;
+  height:100%;
+  box-sizing: border-box;
 }
 
 body{
-    font-family: pretendard, sans-serif;
-    background-color:#f1f1f1;
-    position: relative;
-    margin:0;
-    min-height:100%;
-    padding-bottom:6.74rem;
-    box-sizing: inherit;
+  font-family: pretendard, sans-serif;
+  background-color:#f1f1f1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin:0;
+  min-height:100%;
+  padding-bottom:14rem;
+  box-sizing: inherit;
 }
+
 /* Main */
 main{
     width: 100vw;
     height: 100vh;
+    flex: 1;
+    position: relative;
 }
 
 .informationContainer{
@@ -25,6 +30,7 @@ main{
     margin-left: 10%;
     margin-right:10%;
     align-items: end;
+    justify-content: space-between;
 }
 
 .information{
@@ -44,14 +50,14 @@ main{
 
 .description{
     display:block;
-    width:480px;
+    width:60%;
     margin-top: 10px;
     font-size: 14px;
 }
 
 .viewMore{
-    position: absolute;
-    right:10%;
+    float: right;
+    white-space: nowrap;
 }
 
 .hpbutton {
@@ -94,6 +100,8 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin:0 10%;
     height:80%;
+    padding-top:30px;
+    padding-bottom:30px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -218,6 +226,18 @@ main{
   and (max-device-width: 768px)
   and (orientation: portrait){
 
+/*Tablet Main */
+
+.informationContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.viewMore{
+  margin-top: 1.5rem;
+}
+
 /* Tablet Header */
 header{
     display:grid;
@@ -263,14 +283,35 @@ header{
   and (orientation: portrait){
 
 /* Mobile Main */
-.projectSelection{
-    display:flex;
-    flex-direction: column;
+
+.informationContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.projectCategory{
-    height:12em;
-    font-size: 1.25em;
+.viewMore{
+  margin-top: 1.5rem;
+}
+
+.projectContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:0 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+
+.projectItem{
+  background-color: none;
+  height: 200px;
+  width: auto;
+}
+
+.projectItem p{
+  position: relative;
+  top:5px;
+  right:3em;
 }
 
 /* Mobile Header */
@@ -303,28 +344,28 @@ header{
 
 /* Mobile Footer */
 footer{
-    margin-bottom:70px;
-    display: flex;
-    flex-direction: column;
-    background-color: #333333;
-    align-items: center;
+  margin-bottom:70px;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  align-items: center;
 }
 
 .socialMediaFooter{
-  margin-left:0;
-  margin-top: 24px;
+margin-left:0;
+margin-top: 24px;
 }
 
 .socialMediaIconFooter{
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
+width: 24px;
+height: 24px;
+margin-left: 10px;
+margin-right: 10px;
 }
 
 .nameEmail{
-  align-content: center;
-  text-align: center;
-  margin-right: 0;
+align-content: center;
+text-align: center;
+margin-right: 0;
 }
 }
